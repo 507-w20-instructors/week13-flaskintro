@@ -6,7 +6,22 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():    
-    return '<h1>Hello World!</h1>'
+    return '<h1>Hello Blurd!</h1>'
+
+
+@app.route('/about')
+def about():
+    course = 'SI 507'
+    semester = 'Winter 2020'
+    html = f'''
+        <p>
+            This app was created in {semester} for {course}.
+        </p>
+        <p>
+            Return <a href='/'>home</a>.
+        </p>
+    '''
+    return html
 
 if __name__ == '__main__':  
     print('starting Flask app', app.name)  
