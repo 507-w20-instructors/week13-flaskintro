@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rhymes</title>
+</head>
+<body>
+    <h1>Words that rhyme with {{word}}</h1>
+    <ol>
+    {% for w in word_list %}
+        <li>{{w}}</li>
+    {% endfor %}
+    </ol>
+</body>
+</html>

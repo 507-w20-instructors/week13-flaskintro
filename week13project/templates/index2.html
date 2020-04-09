@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Today is</title>
+</head>
+<body>
+    <h1>
+        Today is {{month}} {{day}}.
+    </h1>
+    {% if month=="October" and day==31 %}
+        <h2>Happy Halloween!</h2>
+        <img 
+            src="https://www.pinclipart.com/picdir/middle/1-15805_free-to-use-pumpkin-clip-art-cute-cartoon.png"
+            width=300/>
+
+    {% elif month=="April" and day==1 %}
+        <h2>April Fools!</h2>
+        <img 
+            src="https://cdn1.vectorstock.com/i/1000x1000/97/75/cartoon-jack-in-the-box-vector-16119775.jpg"
+            width=300/>
+
+    {% else %}
+        <h2>Have a nice day!</h2>
+        
+    {% endif %}
+</body>
+</html>

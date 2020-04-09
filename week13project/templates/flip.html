@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Coin flip!</title>
+</head>
+<body>
+
+    {% if flip==True %}
+        <h2>You got heads!</h2>
+        <img 
+            src="https://random-ize.com/coin-flip/us-penny/2011-us-penny.jpg"
+            width=300/>
+
+    {% else %}
+    <h2>You got tails!</h2>
+    <img 
+            src="https://random-ize.com/coin-flip/us-penny/2010-us-penny.jpg"
+            width=300/>        
+    {% endif %}
+
+    <h3>Refresh the page to flip again!</h3>
+</body>
+</html>
